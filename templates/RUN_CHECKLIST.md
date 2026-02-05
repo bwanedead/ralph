@@ -24,14 +24,15 @@ Read and understand:
 ## Ensure project-level config exists
 
 - [ ] `ralph/config.json` created (from `ralph/templates/CONFIG_JSON_TEMPLATE.json`)
-- [ ] For harness drivers, `driver.worker_cmd` and `driver.reviewer_cmd` include `{task_file}` and `{output_dir}`
-- [ ] If using `claude_code` and PATH resolution fails, point to a concrete executable (e.g., `C:\Users\<user>\AppData\Roaming\npm\claude.cmd`)
+- [ ] For harness drivers, `driver.worker_cmd` and `driver.reviewer_cmd` include `{task_file}`
+- [ ] If PATH resolution fails, point to a concrete executable (use `.cmd` on Windows)
 
 ## Populate required files
 
 - [ ] `run.json` created (engine-required; pending status)
 - [ ] `control.json` created (engine-required; all false)
 - [ ] `events.ndjson` created (engine-required; empty ok)
+- [ ] `orchestration.json` created (engine-required; from ORCHESTRATION_JSON_TEMPLATE.json)
 - [ ] `PRD.md` created (from PRD_TEMPLATE.md)
 - [ ] `prd.json` created (from PRD_JSON_TEMPLATE.json)
 - [ ] `PROMPT.md` created (from PROMPT_TEMPLATE.md)
